@@ -1,6 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
-export default function Contact() {
+import Image from 'next/image';
+
+export default function About() {
   return (
     <>
       <div className="flex justify-center items-center bg-teal-700 m-2 p-0">
@@ -23,16 +24,14 @@ export default function Contact() {
           <li><Link href="/about">About</Link></li>
         </ul>
       </div>
-<div>
-  <h1 className="text-dark-700"> Contact us </h1>
-</div>
+      <div>
 
-<body className="bg-teal-200">
+    <h1 className="text-5xl text-dark-400"> This is About Page</h1>
+
+     </div>
+    <body className="bg-teal-200">
      
      </body>
-
-    
-      
     </>
   );
 }

@@ -1,34 +1,42 @@
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
-    <div className="flex justify-center items-center bg-slate-400 m-10 p-3">
-    <div className="w-2/3 text-center">
-        <h1 className="text-white text-2xl tracking-widest mx-auto">Hamid Nisar</h1>
-       <h2 className="text-white">Web Developer</h2>
-       <button className="border border-double rounded p-2 m-5 bg-blue-800 text-white hover:bg-red-900">Learn More</button>
-    </div>
-    
-    <div className="border-4 rounded-full border-white">
-    <Image src="/h.png" alt="Hamid Logo" width={120} height={120} className="rounded-full p-3" />
-    <div className="flex text-white justify-center p-0 font-serif">Hamid Nisar</div>
-    </div>
-
-    </div>
-        <div>
-      <ul className="flex flex-col md:flex-row space-x-4 justify-center h-35 bg-slate-600 items-center text-white">
-      <li> Home </li>
-      <li> Contact </li>
-      <li> About </li>
-
-
-
-      </ul>
-
-
+      <div className="flex justify-center items-center bg-teal-700 m-2 p-0">
+        <div className="w-2/3 text-center">
+          <h1 className="text-white text-4xl font-bold tracking-widest mb-2">Hamid Nisar</h1>
+          <h2 className="text-white text-lg">Web Developer</h2>
+          <button className="border border-double rounded p-2 mt-5 bg-teal-400 text-white hover:bg-black">Learn More</button>
         </div>
-   
+
+        <div className="border-4 rounded-full border-white flex flex-col items-center ml-5">
+          <Image src="/h.png" alt="Hamid Logo" width={150} height={150} className="rounded-full p-3" />
+          <div className="text-white mt-2 mb-5 font-weight: 100 ">Hamid Nisar</div>
+        </div>
+      </div>
+
+      <div>
+        <ul className="flex flex-col md:flex-row space-x-4 justify-center h-35 bg-teal-900 items-center text-white">
+        <li><Link href="/">Home</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
+          <li><Link href="/about">About</Link></li>
+        </ul>
+      </div>
+
+     <div>
+
+<h1 className="text-5xl text-dark-300"> This is Home Page </h1>
+
+     </div>
+     <body className="bg-teal-200">
+     
+     </body>
+
+
+
+      
     </>
-  )
+  );
 }
