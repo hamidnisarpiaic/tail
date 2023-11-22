@@ -30,8 +30,25 @@ export default function Contact() {
 <div>
   <h1 className="text-teal-700 text-2xl">This is Contact Page </h1>
 </div>
+<div>
+
+
+
+  
+</div>
+
+
+
+
 
 <body className="bg-teal-200">
+
+
+
+
+
+
+  
      
      </body>
 
